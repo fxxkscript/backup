@@ -1,0 +1,54 @@
+---
+layout: post
+title: 获取滚动条位置 视口大小
+tags:
+- JavaScript
+- javascript
+- 滚动条
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+---
+<h2>获取滚动条位置</h2>
+[javascript]
+	function getScrollOffset(w) {
+		w = w || window;
+		//所有浏览器，除了IE8以及以下的浏览器
+		if(w.pageXOffset) {
+			return {x:w.pageXOffset,y:w.pageYOffset};
+		}
+
+		//IE 正常模式 scrollLeft是HTML节点下的属性
+		var d = w.document;
+		if(document.compatMode == &quot;CSS1Compat&quot;) {
+			return {x:d.documentElement.scrollLeft,y:d.documentElement.scrollTop};
+		}
+		//IE 兼容模式 scollLeft是在body节点下的属性
+		return {x:d.body.scrollLeft,y:d.body.scrollLeft};
+	}
+[/javascript]
+
+Demo:<a title="获取滚动条位置" href="http://code.raycn.net/demo/js/scrollbar.html" target="_blank">http://code.raycn.net/demo/js/scrollbar.html</a>
+<h2>获取视口大小</h2>
+[javascript]
+function getViewportSize(w) {
+	w = w || window;
+	//for all browsers except IE 8 and before
+	if(w.innerWidth) {
+		return {w:w.innerWidth,h:w.innerHeight};
+	}
+
+	var d = w.document;
+	//for IE in Standards mode
+	if(document.compatMode == &quot;CSS1Compat&quot;) {
+		return {w:d.documentElement.clientWidth,h:d.documentElement.clientHeight}
+	}
+	//for IE in Quirks mode
+	return {w:d.body.clientWidth,h:d.body.clientHeight}
+}
+[/javascript]
+
+Demo:<a title="视口大小" href="http://code.raycn.net/demo/js/viewport.html" target="_blank">http://code.raycn.net/demo/js/viewport.html</a>
