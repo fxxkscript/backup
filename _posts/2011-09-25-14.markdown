@@ -21,17 +21,15 @@ codename替换成代码的名称，具体请参照：<a title="刷子" href="htt
 
 效果
 
-[css]
+{% highlight css %}
 .css {
     height:100px;
     width:100px;
 }
-[/css]
+{% endhighlight %}
 
 如何复制代码：双击代码区域，然后CTRL[Command]+C
 
 官方地址是：<a title="SyntaxHighlighter" href="http://alexgorbatchev.com/SyntaxHighlighter/" target="_blank">http://alexgorbatchev.com/SyntaxHighlighter/</a>。
 
 wordpress插件地址是：<a title="syntaxhighlighter" href="http://wordpress.org/extend/plugins/syntaxhighlighter/" target="_blank">http://wordpress.org/extend/plugins/syntaxhighlighter/</a>
-
-&nbsp;
