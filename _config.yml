@@ -17,7 +17,7 @@ author :
   email : i@raycn.net
   github : raycn
   twitter : cn_ray
-  feedburner : feedname
+  feedburner : raycn/snmY
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -100,7 +100,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-16711596-4'
     getclicky :
       site_id : 
     mixpanel :
@@ -112,7 +112,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : tweet
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
