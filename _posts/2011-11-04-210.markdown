@@ -1,0 +1,24 @@
+---
+layout: post
+title: !binary |-
+  TWFjIE9TIFggYmFzaHJjIOWkseaViA==
+wordpress_id: 210
+wordpress_url: !binary |-
+  aHR0cDovL3JheWNuLm5ldC8/cD0yMTA=
+date: 2011-11-04 10:54:44.000000000 +08:00
+---
+OS X 和 Linux 都有 .bash_profile 和 .bashrc 这两个配置文件。
+
+但是，在OS X里会遇到bashrc不生效的情况。
+
+当shell是login shell，<code>.bash_profile</code>才会加载，而bashrc正好相反。
+
+真正的区别是在linux下，当用户登录到一个图形界面，然后打开一个终端terminal，那些shell是non-login shell。
+
+然而，在OS X登录的时候，并没有运行着一个shell，所以，在运行Terminal.app的时候，其实那是一个login shell。
+
+你还是可以在bashrc下写一些配置，只要在bash_profile里source .bashrc就是了。
+
+[bash]
+[ -r ~/.bashrc ] &amp;&amp; source ~/.bashrc
+[/bash]
