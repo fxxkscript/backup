@@ -21,7 +21,7 @@ codename替换成代码的名称，具体请参照：<a title="刷子" href="htt
 
 效果
 
-{% highlight css %}
+{% highlight css linenos %}
 .css {
     height:100px;
     width:100px;
