@@ -11,7 +11,7 @@ markdown: rdiscount
 # so be sure to set them if your theme uses them.
 #
 title : RayCN
-tagline: Lucky one
+tagline : Lucky one
 author :
   name : Ray
   email : i@raycn.net
