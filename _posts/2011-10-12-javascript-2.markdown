@@ -1,0 +1,65 @@
+---
+layout: post
+title: !binary |-
+  SmF2YVNjcmlwdCDlrp7njrDluLjop4HnmoTmjpLluo/nrpfms5U=
+wordpress_id: 166
+wordpress_url: !binary |-
+  aHR0cDovL3JheWNuLm5ldC8/cD0xNjY=
+date: 2011-10-12 13:36:41.000000000 +08:00
+---
+我没有学过算法，最近对这个很有兴趣，查看了一些资料，写了点笔记。
+
+未完待续...欢迎指正
+
+一、Bubble 冒泡排序
+
+[javascript]
+var bubbleSort = function(arr) {
+	for(var i = 0; i &lt; arr.length-1; i++) {
+		for(var j = 0; j &lt; arr.length-i-1; j++) {
+                        if(arr[j] &gt; arr[j+1]) {
+				var temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	return arr;
+}
+[/javascript]
+
+二、Selection 选择排序
+
+三、shaker 排序
+
+四、Insertion 插入排序
+
+五、Shell 缩小增量排序
+
+六、Quick 快速排序
+
+参考阮一峰老师写的文章<a title="快速排序" href="http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html" target="_blank">http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html</a>
+
+[javascript]
+var quickSort = function(arr) {
+	if(arr.length 	var left = [],
+		right = [],
+		base = Math.floor(arr.length/2),
+		baseNum = arr.splice(base,1)[0];
+	for(var i = 0; i &lt; arr.length; i++) {
+                if(arr[i] &gt;= baseNum) {
+			right.push(arr[i]);
+		}
+		else {
+			left.push(arr[i]);
+		}
+	}
+	return quickSort(left).concat(baseNum,quickSort(right));
+};
+[/javascript]
+
+七、Merge 归并排序
+
+八、Heap 堆排序
+
+九、Bogo 猴子排序
