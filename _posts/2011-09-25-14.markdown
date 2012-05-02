@@ -6,6 +6,7 @@ wordpress_id: 14
 wordpress_url: !binary |-
   aHR0cDovL3JheWNuLm5ldC8/cD0xNA==
 date: 2011-09-25 11:17:37.000000000 +08:00
+categories: [wordpress]
 ---
 博客用的代码高亮插件是SyntaxHighlighter Evolved，一款基于javascript的代码高亮插件。
 <!--more-->
