@@ -6,7 +6,7 @@ wordpress_id: 5
 wordpress_url: !binary |-
   aHR0cDovL3JheWNuLm5ldC8/cD01
 date: 2011-09-25 10:35:43.000000000 +08:00
-category: css
+
 ---
 先了解，IE6的<strong>!important bug</strong>
 
