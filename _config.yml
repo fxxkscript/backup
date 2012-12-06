@@ -10,14 +10,14 @@ markdown: rdiscount
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : RayCN
-tagline : Lucky one
+title : Ray
+tagline : The missing program for Mac OS X
 author :
   name : Ray
-  email : i@raycn.net
+  email : ray@tomo.im
   github : raycn
-  twitter : cn_ray
-  feedburner : raycn
+  twitter : qianleilei
+  feedburner : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
